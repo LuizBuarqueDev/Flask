@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload de Imagem</title>
-    <link rel="stylesheet" href="../static/css/indexStyle.css">
-</head>
-<body>
+{% extends'base.html' %}
+    {% block contents %}
     <div class="container">
         <h1>Envio de Imagem</h1>
         <form id="imageForm" enctype="multipart/form-data">
@@ -16,7 +9,5 @@
         </form>
         <div id="message"></div>
     </div>
-
-    <script src="../static/js/uploadFoto.js"></script>
-</body>
-</html>
+    {% endblock %}
+<script src="../static/js/uploadFoto.js"></script>
